@@ -190,16 +190,6 @@ It's not optimized for large-scale NLP training — it's meant for **researchers
 
 ---
 
-## 💡 Future Improvements
-
-- [ ] Add full dataset batching with PyTorch DataLoader
-- [ ] Implement proper padding and causal masks
-- [ ] Add BLEU or perplexity evaluation metrics
-- [ ] Visualize attention heatmaps
-- [ ] Add model checkpoint resume functionality
-
----
-
 ## 🧔 Author
 
 **Arnav Mishra**  
