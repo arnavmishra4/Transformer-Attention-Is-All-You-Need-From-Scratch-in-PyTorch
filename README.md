@@ -1,23 +1,21 @@
-```markdown
-# 🧠 Transformer (Attention Is All You Need) — From Scratch in PyTorch  
+# 🧠 Transformer (Attention Is All You Need) — From Scratch in PyTorch
 
-> *A from-scratch PyTorch implementation of the “Attention Is All You Need” Transformer architecture — my full researcher-level rebuild of the encoder-decoder attention model.*
+> *A from-scratch PyTorch implementation of the "Attention Is All You Need" Transformer architecture — my full researcher-level rebuild of the encoder-decoder attention model.*
 
 ---
 
-## 🌍 Overview  
+## 🌍 Overview
 
 This repository contains a complete **from-scratch implementation** of the Transformer model (Vaswani et al., 2017).  
-It recreates the full **Encoder–Decoder pipeline** including attention, positional encoding, feed-forward layers, and decoding — all written manually in PyTorch without using built-in transformer modules.  
+It recreates the full **Encoder–Decoder pipeline** including attention, positional encoding, feed-forward layers, and decoding — all written manually in PyTorch without using built-in transformer modules.
 
 This project is primarily meant for **learning, experimentation, and research**. It demonstrates how the core mechanics of the Transformer architecture actually work under the hood.
 
 ---
 
-## 🗂️ Repository Structure  
+## 🗂️ Repository Structure
 
 ```
-
 transformer_project/
 │
 ├── data/
@@ -32,25 +30,24 @@ transformer_project/
 ├── predict.py              # greedy decoding / inference
 ├── config.py               # hyperparameters and paths
 └── main.py                 # entry point for training + prediction
-
 ```
 
 ---
 
-## ⚙️ Installation  
+## ⚙️ Installation
 
 **Requirements**
-```
 
+```
 Python >= 3.10
 torch >= 2.0
-
-````
+```
 
 **Install dependencies**
+
 ```bash
 pip install torch
-````
+```
 
 ---
 
@@ -156,14 +153,14 @@ Generated: ['hey', 'how', 'are', 'you']
 
 ## 🧱 Key Components
 
-| File                       | Description                                                                                     |
-| -------------------------- | ----------------------------------------------------------------------------------------------- |
-| **`model/transformer.py`** | Core Transformer implementation (Encoder, Decoder, Attention, FFN, etc.)                        |
-| **`utils.py`**             | Helper utilities for loading JSON data, creating vocabularies, and converting tokens to tensors |
-| **`train.py`**             | Training script with loss, optimizer, and checkpoint saving                                     |
-| **`predict.py`**           | Greedy decoding for sequence generation                                                         |
-| **`config.py`**            | Hyperparameters, file paths, and device configuration                                           |
-| **`main.py`**              | Entry point — runs training and inference                                                       |
+| File | Description |
+|------|-------------|
+| **`model/transformer.py`** | Core Transformer implementation (Encoder, Decoder, Attention, FFN, etc.) |
+| **`utils.py`** | Helper utilities for loading JSON data, creating vocabularies, and converting tokens to tensors |
+| **`train.py`** | Training script with loss, optimizer, and checkpoint saving |
+| **`predict.py`** | Greedy decoding for sequence generation |
+| **`config.py`** | Hyperparameters, file paths, and device configuration |
+| **`main.py`** | Entry point — runs training and inference |
 
 ---
 
@@ -189,23 +186,23 @@ model.eval()
 This project is built to help understand the **internal mechanics of Transformer models** —
 especially how multi-head attention, positional encoding, and residual connections work when written manually in PyTorch.
 
-It’s not optimized for large-scale NLP training — it’s meant for **researchers, students, and engineers** who want to dig into the architecture that started modern generative AI.
+It's not optimized for large-scale NLP training — it's meant for **researchers, students, and engineers** who want to dig into the architecture that started modern generative AI.
 
 ---
 
 ## 💡 Future Improvements
 
-* [ ] Add full dataset batching with PyTorch DataLoader
-* [ ] Implement proper padding and causal masks
-* [ ] Add BLEU or perplexity evaluation metrics
-* [ ] Visualize attention heatmaps
-* [ ] Add model checkpoint resume functionality
+- [ ] Add full dataset batching with PyTorch DataLoader
+- [ ] Implement proper padding and causal masks
+- [ ] Add BLEU or perplexity evaluation metrics
+- [ ] Visualize attention heatmaps
+- [ ] Add model checkpoint resume functionality
 
 ---
 
 ## 🧔 Author
 
-**Arnav Mishra**
+**Arnav Mishra**  
 AI Researcher | Deep Learning Enthusiast
 
 This project was built line-by-line to fully understand the Transformer model from scratch — an educational, research-oriented implementation of *Attention Is All You Need* in PyTorch.
@@ -223,6 +220,3 @@ Special thanks to the open-source PyTorch community for providing reference code
 ---
 
 ### ⭐ If you found this helpful, consider giving it a star on GitHub!
-
-```
-```
